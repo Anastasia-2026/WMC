@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    max-width: 42rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+h1 {
+    background-color: rgba(0, 123, 255, 0.12);
+    color: #007bff;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+nav a {
+    margin: 0 1rem;
+    color: #495057;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+}
+
+article, aside {
+    width: 20rem;
+    padding: 1.5rem;
+    border: 2px solid #e9ecef;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+article:hover, aside:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+}
+
+aside {
+    background: linear-gradient(145deg, #ffffff, #f1f3f5);
+    border-left: 4px solid #007bff;
+}
+
+h2, h3 {
+    color: #343a40;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1.5rem;
+    border-radius: 12px;
+}
