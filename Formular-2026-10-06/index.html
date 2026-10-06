@@ -1,11 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formular Übung</title>
 </head>
 <body>
-    
+
+    <form action="mailto:GIS250893@spengergasse.at?subject=Formular-Einsendung" method="post" enctype="text/plain">
+        
+        <label>Name:</label><br>
+        <input type="text" name="name" pattern="[A-Za-z0-9]{3,12}" required><br><br>
+
+        <label>Geschlecht:</label><br>
+        <input type="radio" name="geschlecht" value="maennlich"> Männlich
+        <input type="radio" name="geschlecht" value="weiblich"> Weiblich<br><br>
+
+        <label>Newsletter:</label>
+        <input type="checkbox" name="agb_akzeptiert" value="ja" required><br><br>
+
+        <label>Abteilung:</label><br>
+        <select name="abteilung">
+            <option value="it">Informatik</option>
+            <option value="media">Medientechnik</option>
+        </select><br><br>
+
+        <label>Kurse:</label><br>
+        <select name="kurse" multiple size="2">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select><br><br>
+
+        <label>Nachricht:</label><br>
+        <textarea name="nachricht" placeholder="Ihre Nachricht..."></textarea><br><br>
+
+        <label>Geburtstag:</label><br>
+        <input type="date" name="geburtstag"><br><br>
+
+        <input type="submit" value="Formular abschicken">
+
+    </form>
+
 </body>
 </html>
