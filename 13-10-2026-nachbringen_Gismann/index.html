@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Formular Übung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="mailto:GIS250893@spengergasse.at?subject=Formular-Einsendung" method="post" enctype="text/plain">
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-z0-9]{3,12}" required>
+
+        <label for="geburtstag">Geburtstag:</label>
+        <input type="date" id="geburtstag" name="geburtstag">
+
+        <label>Geschlecht:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="geschlecht" value="maennlich"> Männlich</label>
+            <label><input type="radio" name="geschlecht" value="weiblich"> Weiblich</label>
+        </div>
+
+        <label for="abteilung">Abteilung:</label>
+        <select id="abteilung" name="abteilung">
+            <option value="it">Informatik</option>
+            <option value="media">Medientechnik</option>
+        </select>
+
+        <label for="kurse">Kurse (Mehrfachauswahl mit Strg/Cmd):</label>
+        <select id="kurse" name="kurse" multiple size="2">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+
+        <label>Newsletter:</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="agb_akzeptiert" value="ja" required> Ich möchte den Newsletter abonnieren</label>
+        </div>
+
+        <label for="nachricht">Nachricht:</label>
+        <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht..."></textarea>
+
+        <input type="submit" value="Formular abschicken">
+
+    </form>
+
+</body>
+</html>
